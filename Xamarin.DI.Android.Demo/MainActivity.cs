@@ -1,10 +1,10 @@
-﻿using Android.App;
-using Android.Widget;
-using Android.OS;
-
-namespace Xamarin.DI.Android.Demo
+﻿namespace Xamarin.DI.Android.Demo
 {
+	using System;
+	using global::Android.App;
 	using global::Android.Content;
+	using global::Android.OS;
+	using global::Android.Widget;
 	using Models;
 
 	[Activity(Label = "Xamarin.DI.Android.Demo", MainLauncher = true, Icon = "@drawable/icon")]
@@ -12,7 +12,7 @@ namespace Xamarin.DI.Android.Demo
 	{
 		private Button _button;
 
-		public ILogger Logger { get; set; }
+		public Lazy<ILogger> Logger { get; set; } //lazily load the logger
 		public ICountRepository CountRepository { get; set; }
 
 		protected override void OnCreate(Bundle bundle)
@@ -28,17 +28,17 @@ namespace Xamarin.DI.Android.Demo
 
 			_button.Click += delegate
 			{
-				CountRepository.CurrentCount++;				
-				if (Logger != null) Logger.Log(string.Format("Log MainActivity: {0} clicks!", CountRepository.CurrentCount));
+				CountRepository.CurrentCount++;
+				if (Logger.Value != null)
+					Logger.Value.Log(string.Format("Log MainActivity: {0} clicks!", CountRepository.CurrentCount));
 				UpdateVisibleCount();
-				
 			};
 
 			var buttonNav = FindViewById<Button>(Resource.Id.MyNavButton);
 
 			buttonNav.Click += delegate
 			{
-				if (Logger != null) Logger.Log("Navigate to the Second Activity");
+				if (Logger.Value != null) Logger.Value.Log("Navigate to the Second Activity");
 				var secondActivity = new Intent(this, typeof (SecondActivity));
 				StartActivity(secondActivity);
 			};
