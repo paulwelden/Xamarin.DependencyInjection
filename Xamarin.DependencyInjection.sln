@@ -1,0 +1,49 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.30723.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Xamarin.DI.Android", "Xamarin.DI.Android\Xamarin.DI.Android.csproj", "{0FF4E914-7DDD-41D3-BDD9-141D616161A0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Xamarin.DI.Android.Demo", "Xamarin.DI.Android.Demo\Xamarin.DI.Android.Demo.csproj", "{A74C2FA8-CF9D-477C-929B-3B4FAA2CF377}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Xamarin.DI.LightInject", "Xamarin.DI.LightInject\Xamarin.DI.LightInject.csproj", "{0626EF58-0E9A-4921-B6EE-A875E459460F}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".nuget", ".nuget", "{D743FCF6-5C20-4D58-999E-8BB64080C039}"
+	ProjectSection(SolutionItems) = preProject
+		.nuget\NuGet.Config = .nuget\NuGet.Config
+		.nuget\NuGet.exe = .nuget\NuGet.exe
+		.nuget\NuGet.targets = .nuget\NuGet.targets
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Xamarin.DI.Core", "Xamarin.DI.Core\Xamarin.DI.Core.csproj", "{CCB44B45-36A8-4820-8E85-2D4CC49D99D7}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{0FF4E914-7DDD-41D3-BDD9-141D616161A0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0FF4E914-7DDD-41D3-BDD9-141D616161A0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0FF4E914-7DDD-41D3-BDD9-141D616161A0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0FF4E914-7DDD-41D3-BDD9-141D616161A0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A74C2FA8-CF9D-477C-929B-3B4FAA2CF377}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A74C2FA8-CF9D-477C-929B-3B4FAA2CF377}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A74C2FA8-CF9D-477C-929B-3B4FAA2CF377}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{A74C2FA8-CF9D-477C-929B-3B4FAA2CF377}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A74C2FA8-CF9D-477C-929B-3B4FAA2CF377}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A74C2FA8-CF9D-477C-929B-3B4FAA2CF377}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{0626EF58-0E9A-4921-B6EE-A875E459460F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0626EF58-0E9A-4921-B6EE-A875E459460F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0626EF58-0E9A-4921-B6EE-A875E459460F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0626EF58-0E9A-4921-B6EE-A875E459460F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CCB44B45-36A8-4820-8E85-2D4CC49D99D7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CCB44B45-36A8-4820-8E85-2D4CC49D99D7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CCB44B45-36A8-4820-8E85-2D4CC49D99D7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CCB44B45-36A8-4820-8E85-2D4CC49D99D7}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
