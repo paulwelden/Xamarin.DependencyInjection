@@ -6,19 +6,15 @@ namespace Xamarin.DI.Android
 
 	public class DIActivity : Activity
 	{
-
 		public static IXamarinResolver Resolver;
-		
 
 		protected override void OnCreate(Bundle savedInstanceState)
 		{
-
-			if(Resolver != null)
-				Resolver.ResolveProperties(this);
-
 			base.OnCreate(savedInstanceState);
+
+			if (Resolver != null)
+				Resolver.ResolveProperties(this);
+			//because we are not in control of the Activity Lifecycle, dependencies can only be injected through properties.
 		}
 	}
-
-
 }

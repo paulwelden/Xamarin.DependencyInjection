@@ -27,5 +27,18 @@
 		{
 			_container.Register<TService, TImplementation>();
 		}
+
+		public void Register<TService, TImplementation>(XamarinResolverLifetime lifetime) where TImplementation : TService
+		{
+			_container.Register<TService, TImplementation>(MapRequestedLifetime(lifetime));
+		}
+
+		private ILifetime MapRequestedLifetime(XamarinResolverLifetime lifetime)
+		{
+			return lifetime == XamarinResolverLifetime.PerContainerLifetime
+				? (ILifetime)new PerContainerLifetime()
+				: new PerScopeLifetime();
+		}
+
 	}
 }

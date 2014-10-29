@@ -4,11 +4,11 @@ using System.Runtime.InteropServices;
 // General Information about an assembly is controlled through the following 
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("Xamarin.DI.Core")]
+[assembly: AssemblyTitle("Xamarin.DI.LightInject.UnitTests")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("DSI")]
-[assembly: AssemblyProduct("Xamarin.DI.Core2")]
+[assembly: AssemblyProduct("Xamarin.DI.LightInject.UnitTests")]
 [assembly: AssemblyCopyright("Copyright © DSI 2014")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
@@ -19,7 +19,7 @@ using System.Runtime.InteropServices;
 [assembly: ComVisible(false)]
 
 // The following GUID is for the ID of the typelib if this project is exposed to COM
-[assembly: Guid("0e45e4a8-61fa-4415-a558-76a32a014b42")]
+[assembly: Guid("800319c8-6a24-47f6-994c-c50d8893a638")]
 
 // Version information for an assembly consists of the following four values:
 //

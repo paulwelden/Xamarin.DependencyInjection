@@ -55,11 +55,14 @@
   <ItemGroup>
     <Compile Include="App_Start\DependencyConfig.cs" />
     <Compile Include="DIApplication.cs" />
-    <Compile Include="ILogger.cs" />
-    <Compile Include="Logger.cs" />
+    <Compile Include="Models\CountRepository.cs" />
+    <Compile Include="Models\ICountRepository.cs" />
+    <Compile Include="Models\ILogger.cs" />
+    <Compile Include="Models\Logger.cs" />
     <Compile Include="MainActivity.cs" />
     <Compile Include="Resources\Resource.Designer.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SecondActivity.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\AboutResources.txt" />
